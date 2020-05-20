@@ -2,10 +2,9 @@ import { Astronaut } from "./Astronaut";
 import { Cargo } from "./Cargo";
 import { Payload } from "./Payload";
 
-export class Rocket implements Payload{
+export class Rocket {
     name: string;
     totalCapacityKg: number;
-    massKg: number;
     cargoItems: Cargo[]=[];
     astronauts: Astronaut[]=[];
     constructor(name: string, totalCapacityKg: number){
